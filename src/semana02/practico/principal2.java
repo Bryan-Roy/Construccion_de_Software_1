@@ -29,7 +29,8 @@ public class principal2 {
         triangulo area2=new triangulo();
         cuadrado area3=new cuadrado();
         
-        area1.area_del_rectangulo(numero1, numero2);
+        area1.asigna(numero1, numero2);
+        area1.area_del_rectangulo();
         area2.Area_del_Triangulo(numero1, numero2);
         area3.asignar(numero3);
         area3.calcular();

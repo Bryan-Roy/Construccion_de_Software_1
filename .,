@@ -1,0 +1,57 @@
+[1mdiff --git a/build/classes/semana01/practico/ejercicio13.class b/build/classes/semana01/practico/ejercicio13.class[m
+[1mindex 04d5e6a..b6235f0 100644[m
+Binary files a/build/classes/semana01/practico/ejercicio13.class and b/build/classes/semana01/practico/ejercicio13.class differ
+[1mdiff --git a/build/classes/semana02/practico/principal2.class b/build/classes/semana02/practico/principal2.class[m
+[1mindex 77a37f0..f2a7c14 100644[m
+Binary files a/build/classes/semana02/practico/principal2.class and b/build/classes/semana02/practico/principal2.class differ
+[1mdiff --git a/src/semana01/practico/ejercicio13.java b/src/semana01/practico/ejercicio13.java[m
+[1mindex 45e909e..9237d22 100644[m
+[1m--- a/src/semana01/practico/ejercicio13.java[m
+[1m+++ b/src/semana01/practico/ejercicio13.java[m
+[36m@@ -16,14 +16,15 @@[m [mpublic class ejercicio13 {[m
+     public static void main(String[] args) {[m
+         Scanner sc=new Scanner(System.in);[m
+         int a=0,b=0,c=0,i,dato;[m
+[31m-        for(i=0;i<5;i++){[m
+[31m-            System.out.println("Inserte candidato");[m
+[31m-            dato=sc.nextInt();[m
+[32m+[m[32m        dato=(int)(Math.random()*(4-1)+1);[m
+[32m+[m[32m        for(i=0;i<50;i++){[m
+[32m+[m[32m            System.out.println("Inserte candidato "+dato);[m
+[32m+[m[32m            //dato=sc.nextInt();[m
+         if(dato==1){[m
+             a++;[m
+         }if(dato==2){[m
+             b++;[m
+[31m-        }else{[m
+[32m+[m[32m        }if(dato==3){[m
+             c++;[m
+         }[m
+     }[m
+[36m@@ -31,10 +32,10 @@[m [mpublic class ejercicio13 {[m
+             System.out.print("Candidato ganador es 1 con: "+a+"\n");[m
+         }[m
+         if(b>a && b>c){[m
+[31m-            System.out.print("Candidato ganador es 1 con: "+b+"\n");[m
+[32m+[m[32m            System.out.print("Candidato ganador es 2 con: "+b+"\n");[m
+         }[m
+         if(c>b && c>a){[m
+[31m-            System.out.print("Candidato ganador es 1 con: "+c+"\n");[m
+[32m+[m[32m            System.out.print("Candidato ganador es 3 con: "+c+"\n");[m
+         }[m
+   }[m
+ }[m
+[1mdiff --git a/src/semana02/practico/principal2.java b/src/semana02/practico/principal2.java[m
+[1mindex 66e2743..c61e682 100644[m
+[1m--- a/src/semana02/practico/principal2.java[m
+[1m+++ b/src/semana02/practico/principal2.java[m
+[36m@@ -29,7 +29,8 @@[m [mpublic class principal2 {[m
+         triangulo area2=new triangulo();[m
+         cuadrado area3=new cuadrado();[m
+         [m
+[31m-        area1.area_del_rectangulo(numero1, numero2);[m
+[32m+[m[32m        area1.asigna(numero1, numero2);[m
+[32m+[m[32m        area1.area_del_rectangulo();[m
+         area2.Area_del_Triangulo(numero1, numero2);[m
+         area3.asignar(numero3);[m
+         area3.calcular();[m
