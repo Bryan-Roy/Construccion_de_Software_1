@@ -21,12 +21,12 @@ public class Socio {
     public Socio(){
         System.out.println("Ingresar el Nombre de Socio:");
         nombre=leer.next();
-        System.out.println("El año de ingreso:");
+        System.out.println("Años de Antiguedad:");
         antiguoClub=leer.nextInt();
     }
     public void imprimir(){
         System.out.println("Nombre: "+nombre);
-        System.out.println("Año de Ingreso: "+antiguoClub);
+        System.out.println("Año de Antiguedad es de : "+antiguoClub+" años");
     }
     public int retornarAntiguo(){
         return antiguoClub;

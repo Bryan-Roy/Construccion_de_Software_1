@@ -21,10 +21,10 @@ public class Club {
     
     public void mayorAntiguo(){
         System.out.println("El Socio mas Antiguo es:");
-        if(socio1.retornarAntiguo()<socio2.retornarAntiguo() && socio1.retornarAntiguo()<socio3.retornarAntiguo()){
+        if(socio1.retornarAntiguo()>socio2.retornarAntiguo() && socio1.retornarAntiguo()>socio3.retornarAntiguo()){
             socio1.imprimir();
         }else{
-            if(socio2.retornarAntiguo()<socio3.retornarAntiguo()){
+            if(socio2.retornarAntiguo()>socio3.retornarAntiguo() && socio2.retornarAntiguo()>socio1.retornarAntiguo()){
                 socio2.imprimir();
             }
             else{
