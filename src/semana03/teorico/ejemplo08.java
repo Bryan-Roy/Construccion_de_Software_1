@@ -172,7 +172,7 @@ class person implements Iterable<worker>{
         double acu=0.0;
         double gastotal=0.0;
         for(worker w:list){
-        acu=w.montoHextras()+w.montoessalud()+w.montosdescuento()+w.montoseguro()+w.montosueldobruto()+w.sueldoneto();
+        acu=w.sueldoneto();
         gastotal+=acu;
         }
         return gastotal;
