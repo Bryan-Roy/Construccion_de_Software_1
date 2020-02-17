@@ -156,12 +156,12 @@ class person implements Iterable<worker>{
     
     String empleadoSnp(){
         String cad2=" ";
-        double montdesc=0.0;
         for(worker e:list){
+            double montdesc=e.montosdescuento();
             if(e.getAfilacion().equals("SNP")){
-                if(e.montosdescuento() < montdesc){
+                if(e.montosdescuento() <= montdesc){
                     montdesc=e.montosdescuento();
-                    cad2=e.getCodigo();
+                    cad2=e.getNombre();
                 }
             }
         }
