@@ -134,8 +134,8 @@ class person implements Iterable<worker>{
     
     int NempleadosMontSegu(){
         int empl=0;
-        for(worker l:list){
-            if(l.montoseguro()>100){
+        for(worker w:list){
+            if(w.montoseguro()>100){
                 empl++;
             }
         }
@@ -144,9 +144,9 @@ class person implements Iterable<worker>{
     
     int NempleadosAreaSist(){
         int emple=0;
-        for(worker a:list){
-            if(a.getAreaLaboral().equals("Sistemas")){
-                if(a.montoHextras()>500 && a.montoHextras()<800){
+        for(worker w:list){
+            if(w.getAreaLaboral().equals("Sistemas")){
+                if(w.montoHextras()>500 && w.montoHextras()<800){
                     emple++;
                 }
             }
@@ -156,12 +156,12 @@ class person implements Iterable<worker>{
     
     String empleadoSnp(){
         String cad2=" ";
-        for(worker e:list){
-            double montdesc=e.montosdescuento();
-            if(e.getAfilacion().equals("SNP")){
-                if(e.montosdescuento() <= montdesc){
-                    montdesc=e.montosdescuento();
-                    cad2=e.getNombre();
+        for(worker w:list){
+            double montdesc=w.montosdescuento();
+            if(w.getAfilacion().equals("SNP")){
+                if(w.montosdescuento() <= montdesc){
+                    montdesc=w.montosdescuento();
+                    cad2=w.getNombre();
                 }
             }
         }
