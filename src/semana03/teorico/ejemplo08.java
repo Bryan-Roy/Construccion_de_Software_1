@@ -207,7 +207,7 @@ public class ejemplo08 {
         System.out.println("C) Empleados cuyo monto seguro superen los 100 soles: "+list.NempleadosMontSegu()+" empleados");
         System.out.println("D) Empleados del area de sistemas cuyo monto de horas extras estan entre 500 y 800 soles: "+list.NempleadosAreaSist()+" empleados");
         System.out.println("E) Empleado del SNP con el menor monto de descuento: "+list.empleadoSnp());
-        System.out.println("F) Total que gasta la empresa en pagar a todos sus empleados: "+list.totalgastoEmp());
+        System.out.println("F) Total que gasta la empresa en pagar a todos sus empleados: "+"s/"+list.totalgastoEmp());
     }
     static int aleatorio(int min,int max){
         return (int)(Math.random()*(max-min)+min);
