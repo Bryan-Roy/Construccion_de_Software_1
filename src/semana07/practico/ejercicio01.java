@@ -73,7 +73,7 @@ public class ejercicio01 extends javax.swing.JFrame {
         getContentPane().add(txtnroestudiante, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 10, 40, -1));
 
         jLabel2.setText("Examen 1");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 50, 20));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 60, 20));
 
         jLabel3.setText("Examen 2");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 90, -1, 20));
