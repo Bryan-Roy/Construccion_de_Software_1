@@ -15,15 +15,6 @@ public class Animal {
     private String name;
     private int id;
     private String sexo;
-    private String check;
-
-    public String getCheck() {
-        return check;
-    }
-
-    public void setCheck(String check) {
-        this.check = check;
-    }
 
     public Animal(String name,String sexo) {
         this.name = name;
