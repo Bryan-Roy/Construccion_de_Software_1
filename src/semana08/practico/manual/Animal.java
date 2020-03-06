@@ -8,7 +8,7 @@ package semana08.practico.manual;
 
 /**
  *
- * @author Ario1
+ * @author BRYANROY
  */
 public class Animal {
     static int idx = 1;
