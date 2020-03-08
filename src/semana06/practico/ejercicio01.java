@@ -79,11 +79,11 @@ class ServiceImpresion {
     @Override
     public String toString() {
         if(getImpresion() instanceof Tinta){
-            return "ServiceImpresion{" + "impresion= TINTA"+ '}';
+            return "ServiceImpresion:" + "impresion= TINTA";
         }else if(getImpresion() instanceof Laser){
-            return "ServiceImpresion{" + "impresion= lASER" + '}';
+            return "ServiceImpresion:" + "impresion= lASER";
         }else{
-            return "ServiceImpresion{" + "impresion= TERMICA" + '}';
+            return "ServiceImpresion:" + "impresion= TERMICA";
         }
     }
 
