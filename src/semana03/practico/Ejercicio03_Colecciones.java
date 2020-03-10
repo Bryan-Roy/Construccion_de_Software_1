@@ -61,7 +61,7 @@ class CuentaW {
 public class Ejercicio03_Colecciones {
     
     public static void main(String[] args) {
-        CuentaW c = new CuentaW("        Raquela q");
+        CuentaW c = new CuentaW(" Raquela q ");
         System.out.println("Numero de letras que hay : "+c.NumLetras());
         System.out.println("Numero de palabras que hay : "+c.NumPalabras());
     }    
